@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "cdf_auc_matches_survival_identity": true,
+    "enumeration_n1": true,
+    "enumeration_n2": true,
+    "enumeration_n3": true,
+    "enumeration_n4": true,
+    "pure_mass_transfer_zero_residual": true,
+    "linear_auc_is_wrong_even_for_exact_mixture": true,
+    "100_general_utility_decompositions": true
+  }
+}

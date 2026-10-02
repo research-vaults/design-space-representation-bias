@@ -1,0 +1,2606 @@
+{
+ "DHFR": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 40,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 76.0
+ },
+ "TrpB4": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.site_coupling=pairwise_sites",
+    "members": [
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 310.1
+ },
+ "T7": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 0,
+  "invalid": [],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B09",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "generator.scope=recombine_observed_elites",
+    "members": [
+     "generator.scope=recombine_observed_elites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 234.9
+ },
+ "GB1": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.site_coupling=pairwise_sites",
+    "members": [
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 625.9
+ },
+ "ParD2": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 40,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 180.4
+ },
+ "ParD3": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 181.1
+ },
+ "TEV": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.site_coupling=pairwise_sites",
+    "members": [
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 626.9
+ },
+ "TrpB3D": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 40,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 185.8
+ },
+ "TrpB3E": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 0,
+  "invalid": [],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B09",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "generator.scope=recombine_observed_elites",
+    "members": [
+     "generator.scope=recombine_observed_elites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 200.6
+ },
+ "TrpB3G": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 187.9
+ },
+ "TrpB3H": {
+  "n_candidates": 41,
+  "n_classes": 22,
+  "n_invalid": 0,
+  "invalid": [],
+  "redundancy": 1.8636363636363635,
+  "fidelity_checks": 41,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 22,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B09",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "generator.scope=recombine_observed_elites",
+    "members": [
+     "generator.scope=recombine_observed_elites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B21",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 198.0
+ },
+ "TrpB3I": {
+  "n_candidates": 41,
+  "n_classes": 21,
+  "n_invalid": 1,
+  "invalid": [
+   "generator.scope=recombine_observed_elites"
+  ],
+  "redundancy": 1.9523809523809523,
+  "fidelity_checks": 40,
+  "probe_order_stable": true,
+  "classes_split_by_heldout": 0,
+  "n_classes_heldout": 21,
+  "classes_split_by_order": 0,
+  "multi_member_classes": [
+   {
+    "id": "B00",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B08",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   }
+  ],
+  "classes": [
+   {
+    "id": "B00",
+    "rep": "acquisition.beta=high",
+    "members": [
+     "acquisition.beta=high",
+     "acquisition.beta=medium",
+     "acquisition.beta=state_adaptive_beta",
+     "acquisition.rule=pure_explore",
+     "acquisition.rule=thompson",
+     "acquisition.rule=ucb",
+     "batch.size_rule=state_adaptive_size",
+     "default",
+     "generator.ball_centre=wild_type",
+     "generator.pool_size=exhaustive",
+     "generator.radius=adaptive_radius",
+     "generator.radius=r2",
+     "representation.pooling=mean",
+     "stopping.rule=budget_exhausted",
+     "stopping.rule=plateau_detect",
+     "surrogate.uncertainty=bootstrap",
+     "surrogate.uncertainty=ensemble_disagreement",
+     "surrogate.uncertainty=gp_posterior",
+     "update.refit=warm_start"
+    ]
+   },
+   {
+    "id": "B01",
+    "rep": "acquisition.lookahead=two_step_myopic_rollout",
+    "members": [
+     "acquisition.lookahead=two_step_myopic_rollout"
+    ]
+   },
+   {
+    "id": "B02",
+    "rep": "acquisition.rule=expected_improvement",
+    "members": [
+     "acquisition.rule=expected_improvement"
+    ]
+   },
+   {
+    "id": "B03",
+    "rep": "batch.selection=diverse_top_k_by_distance",
+    "members": [
+     "batch.selection=diverse_top_k_by_distance"
+    ]
+   },
+   {
+    "id": "B04",
+    "rep": "batch.selection=epsilon_mixed",
+    "members": [
+     "batch.selection=epsilon_mixed"
+    ]
+   },
+   {
+    "id": "B05",
+    "rep": "batch.selection=score_then_cluster",
+    "members": [
+     "batch.selection=score_then_cluster"
+    ]
+   },
+   {
+    "id": "B06",
+    "rep": "generator.pool_size=small",
+    "members": [
+     "generator.pool_size=small"
+    ]
+   },
+   {
+    "id": "B07",
+    "rep": "generator.scope=local_hamming_ball",
+    "members": [
+     "generator.scope=local_hamming_ball"
+    ]
+   },
+   {
+    "id": "B08",
+    "rep": "representation.encoding=onehot_plus_pairs",
+    "members": [
+     "representation.encoding=onehot_plus_pairs",
+     "representation.site_coupling=pairwise_sites"
+    ]
+   },
+   {
+    "id": "B09",
+    "rep": "representation.encoding=physicochem",
+    "members": [
+     "representation.encoding=physicochem"
+    ]
+   },
+   {
+    "id": "B10",
+    "rep": "representation.rank=low_rank_pca",
+    "members": [
+     "representation.rank=low_rank_pca"
+    ]
+   },
+   {
+    "id": "B11",
+    "rep": "surrogate.count=ensemble_of_k",
+    "members": [
+     "surrogate.count=ensemble_of_k"
+    ]
+   },
+   {
+    "id": "B12",
+    "rep": "surrogate.family=boosted_trees",
+    "members": [
+     "surrogate.family=boosted_trees"
+    ]
+   },
+   {
+    "id": "B13",
+    "rep": "surrogate.family=gaussian_process",
+    "members": [
+     "surrogate.family=gaussian_process"
+    ]
+   },
+   {
+    "id": "B14",
+    "rep": "surrogate.family=knn",
+    "members": [
+     "surrogate.family=knn"
+    ]
+   },
+   {
+    "id": "B15",
+    "rep": "surrogate.family=random_forest",
+    "members": [
+     "surrogate.family=random_forest"
+    ]
+   },
+   {
+    "id": "B16",
+    "rep": "surrogate.heads=separated_activity_and_fitness",
+    "members": [
+     "surrogate.heads=separated_activity_and_fitness"
+    ]
+   },
+   {
+    "id": "B17",
+    "rep": "update.target_transform=log1p",
+    "members": [
+     "update.target_transform=log1p"
+    ]
+   },
+   {
+    "id": "B18",
+    "rep": "update.target_transform=rank",
+    "members": [
+     "update.target_transform=rank"
+    ]
+   },
+   {
+    "id": "B19",
+    "rep": "update.weighting=elite_weighted",
+    "members": [
+     "update.weighting=elite_weighted"
+    ]
+   },
+   {
+    "id": "B20",
+    "rep": "update.weighting=recency_weighted",
+    "members": [
+     "update.weighting=recency_weighted"
+    ]
+   }
+  ],
+  "seconds": 173.9
+ }
+}

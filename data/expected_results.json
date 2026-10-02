@@ -1,0 +1,60 @@
+{
+  "sampled_choices": {
+    "records": 8088,
+    "unavailable_responses": 31,
+    "arms": 337,
+    "calls_per_arm": 24,
+    "tv_excess": 0.367,
+    "behaviour_class_counts": [21, 22],
+    "largest_class_size": 19
+  },
+  "confirmatory_choices": {
+    "cells": 1176,
+    "checks": 35,
+    "auc_canonical_minus_raw": {
+      "Qwen/Qwen2.5-0.5B-Instruct": 0.15025866070257196,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.06922420333885351,
+      "Qwen/Qwen2.5-3B-Instruct": 0.030079674092590405,
+      "meta-llama/llama-3.1-8b-instruct": 0.09448369479987771,
+      "openai/gpt-4.1-mini": 0.20979345918455608,
+      "openai/gpt-4.1-nano": 0.02070885649588855,
+      "openai/gpt-4o-mini": -0.502566461272283
+    },
+    "ensemble_minus_mean_single": {
+      "Qwen/Qwen2.5-0.5B-Instruct": 0.030806876258705356,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.05730888680254229,
+      "Qwen/Qwen2.5-3B-Instruct": 0.08790649999222465,
+      "meta-llama/llama-3.1-8b-instruct": 0.0397738787973762,
+      "openai/gpt-4.1-mini": 0.09981356557953323,
+      "openai/gpt-4.1-nano": 0.10722142509665411,
+      "openai/gpt-4o-mini": 0.19019022507564795
+    },
+    "noop": {
+      "Qwen/Qwen2.5-0.5B-Instruct": {"canon": 0.0181048387417118, "raw": 0.8737516693401307},
+      "Qwen/Qwen2.5-1.5B-Instruct": {"canon": 0.13928519542851484, "raw": 0.9889518129435682},
+      "Qwen/Qwen2.5-3B-Instruct": {"canon": 0.005299540081191735, "raw": 0.02233974193528919},
+      "meta-llama/llama-3.1-8b-instruct": {"canon": 0.012105747010215856, "raw": 0.5334993810836386},
+      "openai/gpt-4.1-mini": {"canon": 0.000036610205189141784, "raw": 0.11225377904154105},
+      "openai/gpt-4.1-nano": {"canon": 0.00005940774636141332, "raw": 0.9373489139559924},
+      "openai/gpt-4o-mini": {"canon": 0.00000017219847414628388, "raw": 0.8449422655944742}
+    },
+    "replicate_floor": {
+      "Qwen/Qwen2.5-0.5B-Instruct": 0.0,
+      "Qwen/Qwen2.5-1.5B-Instruct": 0.0,
+      "Qwen/Qwen2.5-3B-Instruct": 0.0,
+      "meta-llama/llama-3.1-8b-instruct": 0.0,
+      "openai/gpt-4.1-mini": 0.1605889105249492,
+      "openai/gpt-4.1-nano": 0.07973092738735003,
+      "openai/gpt-4o-mini": 0.0007013983426707275
+    }
+  },
+  "knapsack_transport": {
+    "models": {
+      "Qwen/Qwen2.5-0.5B-Instruct": {"median_tv": 0.2907232911935921, "families_above_threshold": 6, "families_with_four_top_classes": 6, "families_with_utility_range": 5},
+      "Qwen/Qwen2.5-1.5B-Instruct": {"median_tv": 0.7709748591758708, "families_above_threshold": 6, "families_with_four_top_classes": 6, "families_with_utility_range": 5}
+    },
+    "permutations": 24,
+    "problem_families": 6,
+    "executable_classes": 8
+  }
+}
